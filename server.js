@@ -10,7 +10,10 @@ const port = process.env.PORT || 5500;
 // Enable all request
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: [
+      "http://localhost:5173", // for local testing
+      "https://genieart-production-0f17.up.railway.app", // for production domain
+    ],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   })
