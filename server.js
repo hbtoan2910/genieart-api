@@ -17,7 +17,7 @@ app.use(
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   })
-); //server allows access from frontend with port 5173
+); //server allows access from frontend with port 5173 or production domain
 
 app.options("*", cors()); // Enable preflight requests for all routes
 
