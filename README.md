@@ -49,5 +49,9 @@ app.use(
   
 ); //server allows access from frontend with port 5173 or production domain
 
+Use production domain to test with postman: 
+
+![image](https://github.com/user-attachments/assets/ececfbf2-28ef-4441-828c-b8f03279532b)
+
 ### Video Tutorial
 You can see my youtube video for this project in [here](https://youtu.be/Yh2gz1sz-b8)
