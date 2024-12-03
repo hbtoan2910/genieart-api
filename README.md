@@ -26,6 +26,19 @@ You can use your own credentials by get the api in to the [OPENAI API DOCS](http
 ```
 OPENAI_API_KEY=my_api_key
 ```
+### Main notes:
+To avoid CORS block we need to use CORS and define like following in your NodeJS app:
+
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173", // for local testing
+      "https://genieart-production-0f17.up.railway.app", // for production domain
+    ],
+    credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  })
+); //server allows access from frontend with port 5173 or production domain
 
 ### Video Tutorial
 You can see my youtube video for this project in [here](https://youtu.be/Yh2gz1sz-b8)
