@@ -26,6 +26,7 @@ You can use your own credentials by get the api in to the [OPENAI API DOCS](http
 ```
 OPENAI_API_KEY=my_api_key
 ```
+
 ### Main notes:
 To avoid CORS block we need to use CORS and define like following in your NodeJS app:
 
